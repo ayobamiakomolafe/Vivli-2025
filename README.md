@@ -54,11 +54,13 @@ export SESSION_SECRET="your-session-secret-key"
 
 ### 5. Prepare the Medical Database
 
-Ensure the `database` folder contains the required FAISS vector database files:
+Ensure the `database` folder contains the required FAISS vector database files downloadable [here](https://drive.google.com/drive/folders/1jFnO1X_ZIwXnG2xSMW62DgNWZfh37mi9?usp=sharing):
 - `index.faiss`
 - `index.pkl`
 
 These files contain the pre-processed medical knowledge base used for retrieving relevant information.
+
+Individual database files (GSK, Pfizer ATLAS, Johnson & Johnson, Paratek, Shionogi, Venatorx, Innoviva, Venus Remedies) that makes up the large `database` file is also accessibe [here] (https://drive.google.com/drive/folders/1Zw-2INt29W15c4MnUXrdgKOFTQrW7xMx?usp=sharing) 
 
 ### 6. Run the Application
 
