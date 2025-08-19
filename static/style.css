@@ -1,0 +1,367 @@
+/* Medical RAG Application Styles */
+
+:root {
+    --primary-blue: #2e7bcf;
+    --light-blue: #e3f2fd;
+    --dark-blue: #1976d2;
+    --background-gray: #f7f9fa;
+    --text-gray: #6c757d;
+    --border-light: #dee2e6;
+    --success-green: #28a745;
+    --danger-red: #dc3545;
+    --warning-yellow: #ffc107;
+}
+
+body {
+    background-color: var(--background-gray);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* App Header Styles */
+.app-header {
+    z-index: 1020;
+    background-color: #ffffff !important;
+}
+
+.app-header .container {
+    max-width: 1200px;
+}
+
+.app-header h1 {
+    margin: 0;
+}
+
+/* Mobile-friendly header */
+@media (max-width: 768px) {
+    .app-header {
+        padding: 0.5rem 0;
+    }
+    
+    .app-header .container {
+        padding: 0 1rem;
+    }
+    
+    .app-header .row {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0.75rem;
+    }
+    
+    .app-header .col-auto {
+        width: 100%;
+    }
+    
+    .app-header .d-flex.align-items-center span {
+        font-size: 0.75rem;
+        line-height: 1.3;
+        display: block;
+    }
+}
+
+/* Container centering */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Sticky header spacing */
+body {
+    padding-top: 0;
+    /* Prevent zoom on inputs in iOS */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Touch-friendly interactions */
+.btn, .form-control, .card {
+    /* Improve touch targets */
+    touch-action: manipulation;
+}
+
+/* Prevent unwanted zoom on form focus in mobile */
+@media screen and (max-width: 768px) {
+    input, textarea, select {
+        font-size: 16px !important;
+    }
+}
+
+/* Header Styles */
+.header-section {
+    padding: 2rem 0;
+}
+
+.header-section h1 {
+    color: var(--primary-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.header-section .fa-dna {
+    color: var(--primary-blue);
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid var(--border-light);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(46, 123, 207, 0.25);
+}
+
+.form-control-lg {
+    font-size: 1.15rem;
+    padding: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 123, 207, 0.3);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(46, 123, 207, 0.5);
+}
+
+/* Loading State */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Database info styling */
+.alert-info {
+    background-color: rgba(46, 123, 207, 0.08);
+    border: 1px solid rgba(46, 123, 207, 0.2);
+}
+
+.alert-info .fas.fa-database {
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+}
+
+.alert-info {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: var(--danger-red);
+}
+
+/* Recommendation Content */
+.recommendation-content {
+    background: var(--light-blue);
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    border: 1px solid rgba(46, 123, 207, 0.2);
+}
+
+.recommendation-content strong {
+    color: var(--dark-blue);
+}
+
+/* Icons */
+.fas, .far {
+    color: var(--primary-blue);
+}
+
+/* Form Labels */
+.form-label {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Card Header */
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.25rem 1.5rem;
+}
+
+.card-title {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0.75rem;
+    }
+    
+    /* Mobile-friendly form */
+    .card-body {
+        padding: 1.5rem 1rem;
+    }
+    
+    .form-control-lg {
+        font-size: 1rem;
+        padding: 0.875rem;
+    }
+    
+    /* Touch-friendly button */
+    .btn-primary {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        min-height: 50px;
+    }
+    
+    /* Better spacing for mobile */
+    .lead {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Mobile-optimized recommendations */
+    .recommendation-content {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 1rem;
+    }
+    
+    /* Ensure text is readable on mobile */
+    .form-label {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .card {
+        margin: 0;
+        border-radius: 10px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    /* Stack elements vertically on very small screens */
+    .app-header .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0.5rem;
+    }
+    
+    .app-header .fas.fa-dna {
+        font-size: 1.5rem !important;
+    }
+    
+    .app-header h1 {
+        font-size: 1.25rem !important;
+    }
+}
+
+/* Animation for form submission */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-primary:active {
+    animation: pulse 0.3s ease-in-out;
+}
+
+/* Custom scrollbar for textarea */
+.form-control::-webkit-scrollbar {
+    width: 8px;
+}
+
+.form-control::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.form-control::-webkit-scrollbar-thumb {
+    background: var(--primary-blue);
+    border-radius: 10px;
+}
+
+.form-control::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.form-control:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* Text selection */
+::selection {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+/* Medical themed gradients */
+.bg-medical-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+}
+
+/* Source attribution styling */
+.source-item {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    margin-bottom: 0.25rem;
+}
+
+.source-item:before {
+    content: "• ";
+    color: var(--primary-blue);
+    font-weight: bold;
+}
