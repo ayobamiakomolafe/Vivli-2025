@@ -60,7 +60,7 @@ Ensure the `database` folder contains the required FAISS vector database files d
 
 These files contain the pre-processed medical knowledge base used for retrieving relevant information.
 
-Individual database files (GSK, Pfizer ATLAS, Johnson & Johnson, Paratek, Shionogi, Venatorx, Innoviva, Venus Remedies) that makes up the large `database` file is also accessibe [here] (https://drive.google.com/drive/folders/1Zw-2INt29W15c4MnUXrdgKOFTQrW7xMx?usp=sharing) 
+Individual database files (GSK, Pfizer ATLAS, Johnson & Johnson, Paratek, Shionogi, Venatorx, Innoviva, Venus Remedies) that makes up the large `database` file is also accessibe [here](https://drive.google.com/drive/folders/1Zw-2INt29W15c4MnUXrdgKOFTQrW7xMx?usp=sharing) 
 
 ### 6. Run the Application
 
